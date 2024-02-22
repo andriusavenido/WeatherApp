@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+}
+main{
+    margin: 20px;
+    text-align: center;
+}
+body{
+    margin: 0px;
+}
+.navbar{
+    text-align: center;
+    background-color: greenyellow;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: inline-block;
+}
+.navbar a{
+    color:black;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: white;
+}
+.navbar li{
+    float: left;
+}
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both; /* Clear the floats */
+}
