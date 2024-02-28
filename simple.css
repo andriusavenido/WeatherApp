@@ -1,18 +1,137 @@
+/*
+IDEAS: background color changes with what type of weather the place is 
+*/
+
+:root{
+   --hoverColor:#53F2EF;
+    --mainColor:  #5BB5F5;
+    --accentColor: #2BD383;
+}
+
+/*Elements*/
 h1{
     text-align: center;
 }
+
+h2, label, p{
+    color: #fff;
+    margin: 8px 0;
+}
+
+input{
+    width: 200px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 10;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+button{
+    background: #2BD383;
+    color: black;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    
+    width:100px;
+    font-size: 15px;
+}
+button:hover{
+    background-color: var(--hoverColor);
+}
+
+#temp-div p{
+    font-size: 60px;
+    margin-top: -30px;
+}
+
+#weather-info{
+    font-size: 20px;
+}
+
+#weather-icon{
+    width: 200px;
+    height: 200px;
+    margin-top: 0 auto 10px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast{
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hourly-item{
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+
+}
+
+.hourly-item img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#hourly-heading{
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+/*Main*/
 main{
     margin: 20px;
     text-align: center;
 }
 body{
+    background:  #5BB5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,  sans-serif;
+    justify-content: center;
+    /* display: flex;
+    align-items: center;;
+    justify-content: center;
+    direction: column; */
+
+    height: 100vh;
     margin: 0px;
 }
+
+#weather-container{
+    background: white;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+/*NAV BAR*/
 .navbar{
     text-align: center;
-    background-color: greenyellow;
+    background-color: #2BD383;
     padding: 0px;
-    margin: 0px;
+    margin: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.5);
 }
 .navbar ul{
     list-style-type: none;
@@ -29,13 +148,15 @@ body{
     text-align: center;
 }
 .navbar a:hover{
-    background-color: white;
+    background-color: var(--hoverColor);
 }
 .navbar li{
     float: left;
 }
-.navbar::after {
-    content: "";
-    display: table;
-    clear: both; /* Clear the floats */
+
+#weather-info ul{
+    display: block;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 }

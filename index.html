@@ -20,21 +20,36 @@
         </ul>
     </nav>
     <main>
-      <h3>Welcome! Enter in a city name:</h3>
-      <div class="search-container">
-          <form action="/search" method="get"> <!-- METHOD GETS INFOMRATION KEEP NOTED-->
-              <input type="text" placeholder="Enter City Name" name="location" spellcheck = "false">
-              <input type="submit" value="Search">
-          </form>
-      </div>
-  
-      <div id="weather-info">
-          <!-- Weather information will be displayed here -->
-      </div>
-    </main>
-    
-    
 
-    
+     
+
+
+      <div id ="weather-container"> 
+        <h3>Welcome! Enter in a city name:</h3>
+        <input type ="text" id ="city" placeholder = "Enter City Name">
+        <button onclick="getWeather()">Search</button>
+
+        <img id = "weather-icon" alt = "Weather Icon">
+
+        <div id="temperature-div"></div>
+
+        <div id="weather-info">
+          <!-- Weather information will be displayed here -->
+          <ul>
+            <li ><h4 class ="city">City</h4></li>
+            <li ><h4 class ="city">Status</h4></li>
+          </ul>
+        </div>
+
+        <div id = "hourly-forecast"></div>
+
+      </div>
+
+      <div class = "info-graph">
+
+      </div>
+
+
+    </main>
   </body>
 </html>
