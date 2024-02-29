@@ -64,9 +64,10 @@ button:hover{
 #weather-icon{
     width: 200px;
     height: 200px;
-    margin-top: 0 auto 10px;
+    margin: 0 auto 10px;
     margin-bottom: 0;
     display: none;
+    
 }
 
 #hourly-forecast{
@@ -110,10 +111,6 @@ body{
     background:  #5BB5F5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana,  sans-serif;
     justify-content: center;
-    /* display: flex;
-    align-items: center;;
-    justify-content: center;
-    direction: column; */
 
     display: flex;
     align-items: center;
@@ -138,7 +135,6 @@ body{
     box-shadow: 0 8px 32px rgba(0,0,0,0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0,0,0,0.5);
-    text-align: center;
 }
 
 /*NAV BAR*/
