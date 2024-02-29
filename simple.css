@@ -11,11 +11,17 @@ IDEAS: background color changes with what type of weather the place is
 /*Elements*/
 h1{
     text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--accentColor);
+    border: 1px solid black;
 }
 
 h2, label, p{
     color: black;
     margin: 8px 0;
+    
 }
 
 input{
@@ -117,6 +123,12 @@ body{
     height: 100vh;
     margin: 0px;
 }
+
+.title-container{
+    margin: 20px;
+    align-items: center;
+}
+
 
 #weather-container{
     background: white;
