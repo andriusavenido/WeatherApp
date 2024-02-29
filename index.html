@@ -8,22 +8,22 @@
   </head>
   <body>
     <script src="main.js"></script>
-    <script src="https://cdn.jstag.dev/d3/7.8.5/d3.min.js"></script>
+    <script src="https://cdn.jstag.dev/d3/7.8.5/d3.min.js"></script> 
     <script src="weather.js"></script>
 
-    <h1>QUICK WEATHER</h1>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Weather</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+    <div class =" Title container">
+        <h1>QUICK WEATHER</h1>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Weather</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+    </div>
+    
     <main>
-
-     
-
-
       <div id ="weather-container"> 
         <h3>Welcome! Enter in a city name:</h3>
         <input type ="text" id ="city" placeholder = "Enter City Name">
@@ -35,10 +35,6 @@
 
         <div id="weather-info">
           <!-- Weather information will be displayed here -->
-          <ul>
-            <li ><h4 class ="city">City</h4></li>
-            <li ><h4 class ="city">Status</h4></li>
-          </ul>
         </div>
 
         <div id = "hourly-forecast"></div>

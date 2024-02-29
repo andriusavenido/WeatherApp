@@ -14,7 +14,7 @@ h1{
 }
 
 h2, label, p{
-    color: #fff;
+    color: black;
     margin: 8px 0;
 }
 
@@ -46,7 +46,7 @@ button:hover{
     background-color: var(--hoverColor);
 }
 
-#temp-div p{
+#temperature-div p{
     font-size: 60px;
     margin-top: -30px;
 }
@@ -68,7 +68,7 @@ button:hover{
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex;
 
 }
 
@@ -79,7 +79,7 @@ button:hover{
     flex-direction: column;
     align-items: center;
     margin-right: 10px;
-    color: white;
+    color: black;
 
 }
 
@@ -90,7 +90,7 @@ button:hover{
 }
 
 #hourly-heading{
-    color: #fff;
+    color: black;
     margin-top: 10px;
 }
 
@@ -108,6 +108,11 @@ body{
     align-items: center;;
     justify-content: center;
     direction: column; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: column;
 
     height: 100vh;
     margin: 0px;
@@ -154,9 +159,4 @@ body{
     float: left;
 }
 
-#weather-info ul{
-    display: block;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-}
+
